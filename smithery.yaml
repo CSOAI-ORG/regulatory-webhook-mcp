@@ -1,3 +1,31 @@
 name: regulatory-webhook-mcp
-description: MEOK AI Labs - Uregulatory webhook
+description: MEOK AI Labs - AI Governance & Compliance
 version: 1.0.0
+tools:
+- name: subscribe
+  description: Subscribe to regulatory update notifications.
+  parameters:
+  - name: email
+    type: string
+    required: true
+  - name: frameworks
+    type: string
+    required: false
+- name: get_recent_changes
+  description: Get recent regulatory changes.
+  parameters:
+  - name: framework
+    type: string
+    required: false
+  - name: days
+    type: integer
+    required: false
+- name: check_for_updates
+  description: Check if any monitored frameworks have recent updates.
+  parameters:
+  - name: frameworks
+    type: string
+    required: false
+- name: list_subscribers
+  description: List all webhook subscribers.
+  parameters: []

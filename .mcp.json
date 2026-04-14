@@ -1,6 +1,63 @@
 {
   "name": "regulatory-webhook-mcp",
-  "description": "MEOK AI Labs Uregulatory webhook",
+  "description": "MEOK AI Labs - AI Governance & Compliance",
   "version": "1.0.0",
-  "author": "MEOK AI Labs"
+  "tools": [
+    {
+      "name": "subscribe",
+      "description": "Subscribe to regulatory update notifications.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "frameworks": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "email"
+        ]
+      }
+    },
+    {
+      "name": "get_recent_changes",
+      "description": "Get recent regulatory changes.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "framework": {
+            "type": "string"
+          },
+          "days": {
+            "type": "integer"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "check_for_updates",
+      "description": "Check if any monitored frameworks have recent updates.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "frameworks": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "list_subscribers",
+      "description": "List all webhook subscribers.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  ]
 }
