@@ -1,0 +1,73 @@
+{
+  "name": "regulatory-webhook",
+  "description": "MEOK AI Labs \u2014 Monitor regulatory changes. Subscribe to updates. Get notified when laws change.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/regulatory-webhook-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "subscribe",
+      "description": "Subscribe to regulatory update notifications for specific frameworks."
+    },
+    {
+      "name": "unsubscribe",
+      "description": "Unsubscribe from regulatory updates."
+    },
+    {
+      "name": "get_recent_changes",
+      "description": "Get recent regulatory changes for specified frameworks."
+    },
+    {
+      "name": "check_for_updates",
+      "description": "Check if monitored frameworks have recent updates."
+    },
+    {
+      "name": "register_webhook",
+      "description": "Register a webhook for regulatory notifications."
+    },
+    {
+      "name": "trigger_webhook",
+      "description": "Manually trigger a webhook with payload."
+    },
+    {
+      "name": "get_subscribers",
+      "description": "List all webhook subscribers (admin only)."
+    },
+    {
+      "name": "list_webhooks",
+      "description": "List all registered webhooks."
+    },
+    {
+      "name": "get_framework_newsletter_summary",
+      "description": "Get a newsletter-ready summary of recent regulatory changes."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "DevOps & Infrastructure"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
