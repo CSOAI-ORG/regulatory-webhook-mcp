@@ -10,6 +10,15 @@ from datetime import datetime, timezone
 from collections import defaultdict
 from mcp.server.fastmcp import FastMCP
 
+FREE_DAILY_LIMIT = 15
+_usage = defaultdict(list)
+def _rl(c="anon"):
+    now = datetime.now(timezone.utc)
+    _usage[c] = [t for t in _usage[c] if (now-t).total_seconds() < 86400]
+    if len(_usage[c]) >= FREE_DAILY_LIMIT: return json.dumps({"error": f"Limit {FREE_DAILY_LIMIT}/day"})
+    _usage[c].append(now); return None
+
+
 _usage = defaultdict(list)
 def _rl(c="anon"):
     now = datetime.now(timezone.utc)
