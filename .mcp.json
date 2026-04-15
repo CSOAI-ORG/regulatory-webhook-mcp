@@ -1,6 +1,6 @@
 {
   "name": "regulatory-webhook-mcp",
-  "description": "MEOK AI Labs - AI Governance & Compliance",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs \u2014 Monitor regulatory changes. Subscribe to updates. Get notified when laws change.",
   "version": "1.0.0",
   "tools": [
     {
