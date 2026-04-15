@@ -1,6 +1,6 @@
 name: regulatory-webhook-mcp
-description: "MEOK AI Labs \u2014 Monitor regulatory changes. Subscribe to updates.\
-  \ Get notified when laws change."
+description: MCP server for regulatory webhook. Features subscribe, get recent changes,
+  check for updates. From MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: subscribe

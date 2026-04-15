@@ -1,1 +1,11 @@
-{"name":"regulatory-webhook-mcp","version":"1.0.0","author":"MEOK AI Labs","license":"MIT","repository":{"type":"git","url":"https://github.com/CSOAI-ORG/regulatory-webhook-mcp"}}
+{
+  "name": "regulatory-webhook-mcp",
+  "version": "1.0.0",
+  "author": "MEOK AI Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/regulatory-webhook-mcp"
+  },
+  "description": "MCP server for regulatory webhook. Features subscribe, get recent changes, check for updates. From MEOK AI Labs."
+}
