@@ -1,88 +1,38 @@
-# Regulatory Webhook
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — MEOK AI Labs — Monitor regulatory changes. Subscribe to updates. Get notified when laws change.
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/regulatory-webhook-mcp)](https://github.com/CSOAI-ORG/regulatory-webhook-mcp/stargazers)
 
-Regulatory Update Webhook — MEOK AI Labs. Monitor regulatory changes, notify subscribers.
+# uregulatoryU webhookU mcp
+
+**Regulatory Update Webhook — MEOK AI Labs. Monitor regulatory changes, notify subscribers.**
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/regulatory-webhook-mcp)](https://www.npmjs.com/package/@meok-ai/regulatory-webhook-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/regulatory-webhook-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install regulatory-webhook-mcp
+# or
+npm install -g @meok-ai/regulatory-webhook-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-# Run standalone
-python server.py
+See the project repository for full documentation and examples.
 
-# Or via MCP
-mcp install regulatory-webhook-mcp
-```
+## Enterprise Support
 
-## Tools
-
-### `subscribe`
-Subscribe to regulatory update notifications for specific frameworks.
-
-**Parameters:**
-- `email` (str)
-- `frameworks` (str)
-- `webhook_url` (str)
-
-### `unsubscribe`
-Unsubscribe from regulatory updates.
-
-**Parameters:**
-- `email` (str)
-
-### `get_recent_changes`
-Get recent regulatory changes for specified frameworks.
-
-**Parameters:**
-- `framework` (str)
-- `days` (int)
-
-### `check_for_updates`
-Check if monitored frameworks have recent updates.
-
-**Parameters:**
-- `frameworks` (str)
-
-### `register_webhook`
-Register a webhook for regulatory notifications.
-
-**Parameters:**
-- `url` (str)
-- `events` (str)
-
-### `trigger_webhook`
-Manually trigger a webhook with payload.
-
-**Parameters:**
-- `webhook_id` (str)
-- `payload` (str)
-
-### `get_subscribers`
-List all webhook subscribers (admin only).
-
-### `list_webhooks`
-List all registered webhooks.
-
-### `get_framework_newsletter_summary`
-Get a newsletter-ready summary of recent regulatory changes.
-
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
-
-## Links
-
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/regulatory-webhook-mcp](https://github.com/CSOAI-ORG/regulatory-webhook-mcp)
-- **PyPI**: [pypi.org/project/regulatory-webhook-mcp](https://pypi.org/project/regulatory-webhook-mcp/)
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
