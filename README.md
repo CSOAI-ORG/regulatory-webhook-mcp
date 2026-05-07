@@ -1,3 +1,5 @@
+[![regulatory-webhook-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/regulatory-webhook-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/regulatory-webhook-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/regulatory-webhook-mcp)](https://github.com/CSOAI-ORG/regulatory-webhook-mcp/stargazers)
