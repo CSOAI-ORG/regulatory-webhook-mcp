@@ -1,0 +1,9 @@
+# regulatory-webhook-mcp - Auto-trigger Rules
+
+When the user asks about regulatory webhook, use regulatory-webhook-mcp tools: subscribe, unsubscribe, get_recent_changes, check_for_updates, register_webhook
+
+**MCP server for regulatory webhook mcp operations**
+
+Install: `pip install regulatory-webhook-mcp`
+
+By MEOK AI Labs — MIT licensed.

@@ -1,36 +1,48 @@
-# Regulatory Webhook MCP
-
-> Regulatory change monitoring MCP — subscribe to EU AI Act, NIS2, DORA updates
-
-`regulatory-webhook-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# regulatory-webhook-mcp
+# **MCP server for regulatory webhook mcp operations**
 
 ## Install
-
 ```bash
 pip install regulatory-webhook-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx regulatory-webhook-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `subscribe` — Subscribe to regulatory update notifications for specific frameworks.
-- `unsubscribe` — Unsubscribe from regulatory updates.
-- `get_recent_changes` — Get recent regulatory changes for specified frameworks.
-- `check_for_updates` — Check if monitored frameworks have recent updates.
-- `register_webhook` — Register a webhook for regulatory notifications.
-- `trigger_webhook` — Manually trigger a webhook with payload.
-- `get_subscribers` — List all webhook subscribers (admin only).
-- `list_webhooks` — List all registered webhooks.
-- `get_framework_newsletter_summary` — Get a newsletter-ready summary of recent regulatory changes.
+### `subscribe`
+Subscribe to regulatory update notifications for specific frameworks.
 
-## Links
+### `unsubscribe`
+Unsubscribe from regulatory updates.
 
-- Source: https://github.com/CSOAI-ORG/regulatory-webhook-mcp
-- PyPI: https://pypi.org/project/regulatory-webhook-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `get_recent_changes`
+Get recent regulatory changes for specified frameworks.
+
+### `check_for_updates`
+Check if monitored frameworks have recent updates.
+
+### `register_webhook`
+Register a webhook for regulatory notifications.
+
+### `trigger_webhook`
+Manually trigger a webhook with payload.
+
+### `get_subscribers`
+List all webhook subscribers (admin only).
+
+### `list_webhooks`
+List all registered webhooks.
+
+### `get_framework_newsletter_summary`
+Get a newsletter-ready summary of recent regulatory changes.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

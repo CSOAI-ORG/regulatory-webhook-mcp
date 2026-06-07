@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Regulatory Update Webhook — MEOK AI Labs. Monitor regulatory changes, notify subscribers."""
+"""
+Regulatory Update Webhook — MEOK AI Labs. Monitor regulatory changes, notify subscribers."""
 
 import sys, os
 
-sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
 from auth_middleware import check_access
 
 import json, os, hashlib, time, requests
@@ -116,7 +116,7 @@ def subscribe(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -186,7 +186,7 @@ def unsubscribe(email: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -241,7 +241,7 @@ def get_recent_changes(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -303,7 +303,7 @@ def check_for_updates(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -366,7 +366,7 @@ def register_webhook(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -426,7 +426,7 @@ def trigger_webhook(webhook_id: str, payload: dict, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -485,7 +485,7 @@ def get_subscribers(api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if tier not in ["pro", "enterprise"]:
         return {"error": "Admin access required"}
@@ -532,7 +532,7 @@ def list_webhooks(api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     return {"webhooks": _webhooks, "total": len(_webhooks)}
 
@@ -576,7 +576,7 @@ def get_framework_newsletter_summary(api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -594,5 +594,8 @@ def get_framework_newsletter_summary(api_key: str = "") -> str:
     }
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

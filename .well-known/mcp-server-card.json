@@ -1,0 +1,40 @@
+{
+  "name": "regulatory-webhook-mcp",
+  "title": "Regulatory Webhook Mcp",
+  "description": "MCP server for regulatory webhook. Features subscribe, get recent changes, check for updates. From MEOK AI Labs.",
+  "version": "1.0.10",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "subscribe"
+    },
+    {
+      "name": "unsubscribe"
+    },
+    {
+      "name": "get_recent_changes"
+    },
+    {
+      "name": "check_for_updates"
+    },
+    {
+      "name": "register_webhook"
+    },
+    {
+      "name": "trigger_webhook"
+    },
+    {
+      "name": "get_subscribers"
+    },
+    {
+      "name": "list_webhooks"
+    },
+    {
+      "name": "get_framework_newsletter_summary"
+    }
+  ]
+}
