@@ -1,0 +1,104 @@
+{
+  "name": "regulatory-webhook-mcp",
+  "description": "Regulatory Webhook MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/regulatory-webhook-mcp.html",
+  "version": "1.0.10",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "subscribe",
+      "name": "Subscribe",
+      "description": "subscribe via regulatory-webhook-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "unsubscribe",
+      "name": "Unsubscribe",
+      "description": "unsubscribe via regulatory-webhook-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_recent_changes",
+      "name": "Get Recent Changes",
+      "description": "get_recent_changes via regulatory-webhook-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_for_updates",
+      "name": "Check For Updates",
+      "description": "check_for_updates via regulatory-webhook-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "register_webhook",
+      "name": "Register Webhook",
+      "description": "register_webhook via regulatory-webhook-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "trigger_webhook",
+      "name": "Trigger Webhook",
+      "description": "trigger_webhook via regulatory-webhook-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_subscribers",
+      "name": "Get Subscribers",
+      "description": "get_subscribers via regulatory-webhook-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_webhooks",
+      "name": "List Webhooks",
+      "description": "list_webhooks via regulatory-webhook-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_framework_newsletter_summary",
+      "name": "Get Framework Newsletter Summary",
+      "description": "get_framework_newsletter_summary via regulatory-webhook-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

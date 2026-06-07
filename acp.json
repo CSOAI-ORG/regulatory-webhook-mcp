@@ -1,0 +1,27 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "regulatory-webhook-mcp",
+    "description": "Regulatory Webhook MCP Server by MEOK AI Labs",
+    "version": "1.0.10",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "regulatory-webhook-mcp"
+      }
+    ],
+    "capabilities": [
+      "subscribe",
+      "unsubscribe",
+      "get_recent_changes",
+      "check_for_updates",
+      "register_webhook",
+      "trigger_webhook",
+      "get_subscribers",
+      "list_webhooks",
+      "get_framework_newsletter_summary"
+    ]
+  }
+}
