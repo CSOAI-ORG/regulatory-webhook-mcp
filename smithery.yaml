@@ -30,3 +30,16 @@ tools:
 - name: list_subscribers
   description: List all webhook subscribers.
   parameters: []
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+    - apiKey
+    properties:
+      apiKey:
+        type: string
+        description: Your MEOK API Key
+  commandFunction: "(config) => ({\n  command: 'uvx',\n  args: ['regulatory-webhook-mcp',\
+    \ '--api-key', config.apiKey],\n  env: {\n    MEOK_API_KEY: config.apiKey\n  }\n\
+    })"
