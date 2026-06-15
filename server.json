@@ -4,9 +4,8 @@
   "version": "1.0.11",
   "description": "Regulatory Webhook MCP Server by MEOK AI Labs",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/regulatory-webhook-mcp",
-    "source": "https://github.com/CSOAI-ORG/regulatory-webhook-mcp"
+    "source": "github"
   },
   "packages": [
     {
