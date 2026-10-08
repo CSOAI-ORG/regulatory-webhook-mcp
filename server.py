@@ -11,7 +11,7 @@ from auth_middleware import check_access
 import json, os, hashlib, time, requests
 from datetime import datetime, timezone
 from collections import defaultdict
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer as FastMCP  # mcp 2.x: FastMCP renamed MCPServer
 
 FREE_DAILY_LIMIT = 30
 _usage = defaultdict(list)
